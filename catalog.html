@@ -8,8 +8,11 @@
 
     <header class="main-header">
     	<a href="index.html" class="logo"><img src="img/logo-device.svg" width="163" height="35" alt="Логотип DEVICE"></a>
-    	<input type="text" placeholder="Поиск по сайту">
-    	<button>Найти</button>
+    	<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+    		<p><label for="search-field"  class="visually-hidden">Поиск по сайту</label></p>
+    		<input id="search-field" type="text" placeholder="Поиск по сайту">
+    		<button type="submit">Найти</button>
+    	</form>
     	<ul class="user-nav">
     		<li><a href="#">Валентин Петухов</a></li>
     		<li><a href="#">Выйти</a></li>
