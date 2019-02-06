@@ -3,24 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="main-header">
     	<a class="logo"><img src="img/logo-device.svg" width="163" height="35" alt="Логотип DEVICE"></a>
-    	<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-    		<label for="search-field"  class="visually-hidden">Поиск по сайту</label>
-    		<input id="search-field" type="text" placeholder="Поиск по сайту">
-    		<button type="submit">Найти</button>
-    	</form>
-    	<ul class="user-nav">
-    		<li><a href="#">Войти</a></li>
-    		<li><a href="#">Сравнить</a></li>
-    		<li><a href="#">Корзина</a></li>
-    	</ul>
+    	<div class="main-header-top">
+    		<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+					<label for="search-field" class="visually-hidden">Поиск по сайту</label>
+					<input id="search-field" type="text" placeholder="Поиск по сайту">
+					<button type="submit">Найти</button>
+				</form>
+				<ul class="user-nav">
+					<li><a href="#" class="icon-login">Войти</a></li>
+					<li><a href="#" class="icon-compare">Сравнить</a></li>
+					<li><a href="#" class="icon-cart">Корзина</a></li>
+				</ul>
+    	</div>
     	<nav class="main-nav">
-    		<ul>
-    			<li>
+    		<ul class="main-menu">
+    			<li class="dropdown">
     				<a href="catalog.html">Каталог товаров</a>
     				<div class="catalog-nav">
 							<ul>
@@ -45,24 +49,27 @@
     </header>
     
     <main>
-     	<section class="about">
-    		<h2>О нас</h2>
-    		<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-				<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-				<ul>
-					<li>Деловые Линии</li>
-					<li>Автотрейдинг</li>
-					<li>ЖелДорЭкспедиция</li>
-				</ul>
-				<a href="#">Подробнее о нас</a>
-    	</section>
-    	
-    	<section class="contacts">
-    		<h2>Контакты</h2>
-    		<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-    		<a href="#"><img src="img/map-jpg.jpg" width="560" height="222" alt="Карта"></a>
-    		<button type="button">Напишите нам</button>
-    	</section>
+    	<div class="index-columns">
+    		<section class="about">
+					<h2>О нас</h2>
+					<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+					<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+					<ul class="about-list">
+						<li>Деловые Линии</li>
+						<li>Автотрейдинг</li>
+						<li>ЖелДорЭкспедиция</li>
+					</ul>
+					<a href="#" class="btn">Подробнее о нас</a>
+				</section>
+
+				<section class="contacts">
+					<h2>Контакты</h2>
+					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+					<a href="#"><img src="img/map-jpg.jpg" width="560" height="222" alt="Карта"></a>
+					<button type="button" class="btn">Напишите нам</button>
+				</section>
+    	</div>
+     	
     	<section class="modal modal-contact-us">
     		<h2 class="visually-hidden">Связаться с нами</h2>
     		<form class="contact-us" action="https://echo.htmlacademy.ru" method="post">
@@ -83,11 +90,11 @@
     <footer class="main-footer">
     	<a class="logo"><img src="img/logo-device.svg" width="163" height="35" alt="Логотип DEVICE"></a>
     	<ul class="footer-user-nav">
-    		<li><a href="#">Войти</a></li>
-    		<li><a href="#">Сравнить</a></li>
-    		<li><a href="#">Корзина</a></li>
+    		<li><a href="#" class="login">Войти</a></li>
+    		<li><a href="#" class="compare">Сравнить</a></li>
+    		<li><a href="#" class="basket">Корзина</a></li>
     	</ul>
-    	<address>г. Москва, ул. Строителей, 15</address>
+    	<address class="footer-address">г. Москва, ул. Строителей, 15</address>
     	<ul class="footer-nav">
     		<li><a href="#">Доставка</a></li>
 				<li><a href="#">Гарантия</a></li>
@@ -99,7 +106,7 @@
     		<li><a href="#" class="social_instagram" target="_blank">Instagram</a></li>
     		<li><a href="#" class="social_twitter" target="_blank">Twitter</a></li>
     	</ul>
-    	<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy"></a>
+    	<a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright" target="_blank"><img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy"></a>
     </footer>
 
   </body>
