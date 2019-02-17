@@ -66,16 +66,37 @@
 							</fieldset>    	
 							<fieldset>
 								<legend>Цвет</legend>
-								<p><label><input type="checkbox"> Черный</label></p>
-								<p><label><input type="checkbox"> Белый</label></p>
-								<p><label><input type="checkbox"> Синий</label></p>
-								<p><label><input type="checkbox"> Красный</label></p>
-								<p><label><input type="checkbox"> Розовый</label></p>
+								<p class="label">
+									<input id="black" type="checkbox" checked>
+									<label for="black"><span class="checkbox"></span> Черный</label>
+								</p>
+								<p class="label">
+									<input id="white" type="checkbox">
+									<label for="white"><span class="checkbox"></span> Белый</label>
+								</p>
+								<p class="label">
+									<input id="blue" type="checkbox" checked>
+									<label for="blue"><span class="checkbox"></span> Синий</label>
+								</p>
+								<p class="label">
+									<input id="red" type="checkbox" checked>
+									<label for="red"><span class="checkbox"></span> Красный</label>
+								</p>
+								<p class="label">
+									<input id="pink" type="checkbox" disabled>
+									<label for="pink"><span class="checkbox"></span> Розовый</label>
+								</p>
 							</fieldset>    		
 							<fieldset>
 								<legend>Bluetooth</legend>
-								<p><label><input type="radio" name="bluetooth"> Есть</label></p>
-								<p><label><input type="radio" name="bluetooth"> Нет</label></p>
+								<p class="label">
+									<input id="bt-yes" type="radio" name="bluetooth" checked>
+									<label for="bt-yes"><span class="radio"></span> Есть</label>
+								</p>
+								<p class="label">
+									<input id="bt-no" type="radio" name="bluetooth">
+									<label for="bt-no"><span class="radio"></span> Нет</label>
+								</p>
 							</fieldset>
 							<button class="btn filter-btn" type="submit">Показать</button>
 						</form>
