@@ -169,11 +169,13 @@ h3 {
 
 .search-form button:hover,
 .search-form button:focus {
+	display: block;
 	color: #ffffff;
 	background-color: #000000;
 }
 
 .search-form button:active {
+	display: block;
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #000000;
 }
@@ -391,7 +393,7 @@ h3 {
 .main-footer-middle {
 	width: 1160px;
 	margin: 0 auto;
-	padding: 40px 0 65px;
+	padding: 20px 0 59px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -519,13 +521,13 @@ h3 {
 
 .footer-nav {
 	margin: 0;
-	padding: 0;
+	padding: 5px 0 0;
 	list-style: none;
 	display: flex;
 }
 
 .footer-nav li:not(:last-child) {
-	margin-right: 38px;
+	margin-right: 33px;
 }
 
 .footer-nav a {
@@ -644,32 +646,32 @@ h3 {
 	font-size: 14px;
 }
 
-input,
-textarea {
+.modal input,
+.modal textarea {
 	background-color: #f2f2f2;
 	border: 3px solid #f2f2f2;
 	color: rgb(70, 70, 70);
 }
 
-input:hover,
-textarea:hover {
+.modal input:hover,
+.modal textarea:hover {
 	background-color: #eaeaea;
 	border: 3px solid #eaeaea;
 }
 
-input:focus,
-textarea:focus {
+.modal input:focus,
+.modal textarea:focus {
 	background-color: #fff;
 	border: 3px solid rgba(240, 197, 46, 0.5);
 }
 
-input:invalid {
+.modal input:invalid {
 	background-color: rgb(246, 218, 218);
 	border: 3px solid rgb(246, 218, 218);
 }
 
-input::placeholder,
-textarea::placeholder {
+.modal input::placeholder,
+.modal textarea::placeholder {
 	color: rgba(70, 70, 70, 0.4);
 }
 
@@ -734,7 +736,7 @@ textarea::placeholder {
 }
 
 .filter-wrapper {
-	width: 267px;
+	width: 269px;
 	flex-shrink: 0;
 	padding: 69px 67px 0 0;
 	box-sizing: border-box;
@@ -795,7 +797,7 @@ textarea::placeholder {
 .filter fieldset {
 	border: none;
 	margin: 0;
-	padding-bottom: 25px;
+	padding: 0 0 32px;
 }
 
 .filter legend {
@@ -804,9 +806,9 @@ textarea::placeholder {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 800;
-	line-height: 1.33;
+	line-height: 22px;
 	letter-spacing: 0.2px;
-	padding: 16px 0 0;
+	padding: 11px 0 18px;
 	border-top: 2px solid #000;
 	color: #000000;
 }
@@ -842,6 +844,7 @@ input[type="checkbox"] + label .checkbox {
 	background: url(../img/checkbox-off.svg) no-repeat left top;
 }
 
+input[type="checkbox"]:checked:disabled + label .checkbox,
 input[type="checkbox"]:checked + label .checkbox {
 	background: url(../img/checkbox-on.svg) no-repeat left top;
 }
@@ -855,6 +858,7 @@ input[type="radio"] + label .radio {
 	background: url(../img/radio-off.svg) no-repeat left top;
 }
 
+input[type="radio"]:checked:disabled + label .radio,
 input[type="radio"]:checked + label .radio {
 	background: url(../img/radio-on.svg) no-repeat left top;
 }
@@ -880,7 +884,7 @@ input[type="radio"]:disabled + label {
 }
 
 .catalog-item {
-	margin-bottom: 45px;
+	margin-bottom: 48px;
 }
 
 .catalog-item-image {
@@ -936,7 +940,7 @@ input[type="radio"]:disabled + label {
 .catalog-item-info {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 30px;
+	margin-top: 31px;
 }
 
 .catalog-item-title {
@@ -950,11 +954,9 @@ input[type="radio"]:disabled + label {
 }
 
 .catalog-item-price {
-	display: block;
 	width: 100px;
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 16px;
-	font-weight: 300;
 	line-height: 1.5;
 	letter-spacing: 0.2px;
 	text-align: right;
