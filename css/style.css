@@ -868,6 +868,8 @@ label:hover .radio {
 	opacity: 0.6;
 }
 
+input[type="checkbox"]:disabled + label .checkbox,
+input[type="radio"]:disabled + label .radio,
 input[type="checkbox"]:disabled + label,
 input[type="radio"]:disabled + label {
 	opacity: 0.3;
