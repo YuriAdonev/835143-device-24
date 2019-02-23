@@ -65,7 +65,18 @@
 						<form class="filter" action="https://echo.htmlacademy.ru" method="post">
 							<fieldset>
 								<legend>Стоимость</legend>
-									<input type="range" min="0" max="10000">
+									<div class="range">
+										<div class="range-line-bg"></div>
+										<div class="range-line"></div>
+										<div class="range-min">
+											<button class="range-btn" type="button"></button>
+											<span class="range-btn-desc">от 0</span>
+										</div>
+										<div class="range-max">
+											<button class="range-btn" type="button"></button>
+											<span class="range-btn-desc">до 5000</span>
+										</div>
+									</div>
 							</fieldset>    	
 							<fieldset>
 								<legend>Цвет</legend>
