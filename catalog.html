@@ -59,6 +59,9 @@
     	<div class="inner-page-content">
     		<div class="inner-page-wrapper">
 					<div class="filter-wrapper">
+						<div class="filter-header">
+							<p class="filter-header-title">Фильтр:</p>
+						</div>
 						<form class="filter" action="https://echo.htmlacademy.ru" method="post">
 							<fieldset>
 								<legend>Стоимость</legend>
@@ -103,6 +106,18 @@
 					</div>
 
 					<section class="catalog">
+						<div class="catalog-header">
+							<p class="catalog-header-title">Сортировка:</p>
+							<ul class="sort-list">
+								<li class="sort-list-item active"><a href="#">По цене</a></li>
+								<li class="sort-list-item"><a href="#">По типу</a></li>
+								<li class="sort-list-item"><a href="#">По популярности</a></li>
+							</ul>
+							<div class="sort-direction">
+								<a href="#" class="sort-direction-arrow arrow-up"></a>
+								<a href="#" class="sort-direction-arrow arrow-down active"></a>
+							</div>
+						</div>
 						<h2 class="visually-hidden">Каталог</h2>
 						<ul class="catalog-list">
 							<li class="catalog-item">
@@ -159,6 +174,15 @@
 								</div>
 							</li>
 						</ul>
+						<div class="pagination">
+							<a href="#" class="pagination__back">Назад</a>
+							<ul class="pagination__pages">
+								<li class="pagination__item active"><a href="#">1</a></li>
+								<li class="pagination__item"><a href="#">2</a></li>
+								<li class="pagination__item"><a href="#">3</a></li>
+							</ul>
+							<a href="#" class="pagination__next">Вперед</a>
+						</div>
 					</section>
 				</div>
     	</div>
