@@ -361,6 +361,14 @@ h3 {
 	align-items: flex-start;
 }
 
+.main-slider-item:nth-child(2) .main-slider-image {
+	margin-top: 10px;
+}
+
+.main-slider-item:nth-child(3) .main-slider-image {
+	margin-top: 70px;
+}
+
 .main-slider-image {
 	width: 560px;
 	display: flex;
@@ -644,8 +652,12 @@ h3 {
 }
 
 .services-item {
-	display: flex;
+	display: none;
 	margin-top: 73px;
+}
+
+.services-item.active {
+	display: flex;
 }
 
 .services-item-desc {
@@ -676,8 +688,6 @@ h3 {
 	align-items: flex-end;
 }
 
-.brands {}
-
 .brands-list {
 	width: 1160px;
 	margin: 0 auto 83px;
@@ -690,8 +700,6 @@ h3 {
 .brands-item:not(:last-child) {
 	margin-right: 40px;
 }
-
-.brands-link {}
 
 .brands-link img {
 	filter: grayscale(1);
