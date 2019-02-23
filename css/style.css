@@ -1228,6 +1228,7 @@ h3 {
 	display: flex;
 	margin-bottom: 9px;
 }
+
 .range-line-bg {
 	position: absolute;
 	top: 18px;
@@ -1236,6 +1237,7 @@ h3 {
 	height: 2px;
 	background-color: #dbdbdb;
 }
+
 .range-line {
 	position: absolute;
 	top: 18px;
@@ -1244,6 +1246,7 @@ h3 {
 	width: 110px;
 	background-color: #91c92f;
 }
+
 .range-btn {
 	position: absolute;
 	display: block;
@@ -1255,14 +1258,17 @@ h3 {
 	background: url(../img/filter-button.svg) no-repeat;
 	background-size: 20px 22px;
 }
+
 .range-max .range-btn {
 	left: 50%;
 	transform: translateX(-50%);
 }
+
 .range-btn:active {
 	background: url(../img/filter-button.svg) no-repeat;
 	background-size: 22px 24px;
 }
+
 .range-btn-desc {
 	display: block;
 	margin: 18px 0 0 0;
@@ -1271,21 +1277,23 @@ h3 {
 	font-size: 14px;
 	color: rgba(0, 0, 0, 0.2);
 }
+
 .range-min {
 	position: relative;
 	top: 8px;
 	left: -5px;
 }
+
 .range-min .range-btn-desc {
 	padding-left: 5px;
 }
+
 .range-max {
 	position: relative;
 	top: 8px;
 	left: 59px;
 	text-align: center;
 }
-
 
 .filter p {
 	margin: 0;
