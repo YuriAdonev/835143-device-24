@@ -399,7 +399,7 @@ h3 {
 }
 
 .main-slider-item.active .main-slider-desc::before {
-	animation: slider-decor-anim 2s ease;
+	animation: slider-decor-anim 1s ease;
 }
 
 @keyframes slider-decor-anim {
@@ -431,7 +431,7 @@ h3 {
 }
 
 .main-slider-item.active .main-slider-number {
-	animation: slider-number-anim 2s ease;
+	animation: slider-number-anim 1s ease;
 }
 
 @keyframes slider-number-anim {
@@ -693,7 +693,6 @@ h3 {
 	margin: 0 auto 83px;
 	padding: 0;
 	display: flex;
-	/*	justify-content: space-between;*/
 	list-style: none;
 }
 
@@ -704,6 +703,7 @@ h3 {
 .brands-link img {
 	filter: grayscale(1);
 	opacity: 0.2;
+	transition: all 0.2s linear;
 }
 
 .brands-link:hover img,
@@ -1010,8 +1010,59 @@ h3 {
 	opacity: 0.3;
 }
 
+@keyframes bounce {
+	0% {
+		transform: translateY(-2000px);
+	}
+	70% {
+		transform: translateY(30px);
+	}
+	90% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(10px);
+	}
+}
+
 .modal {
+	position: fixed;
 	display: none;
+	top: 50%;
+	left: 50%;
+	margin-left: -480px;
+	transform: translateY(-50%);
+	z-index: 100;
+	background-color: #fff;
+}
+
+.modal-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+	animation: shake 0.6s;
 }
 
 .contact-us,
@@ -1102,7 +1153,8 @@ h3 {
 	display: block;
 }
 
-.modal-close {
+.modal-contact-us-close,
+.modal-map-close {
 	display: block;
 	width: 55px;
 	height: 55px;
@@ -1118,16 +1170,19 @@ h3 {
 	transition: opacity 0.2s linear;
 }
 
-.modal-map .modal-close {
+.modal-map-close {
 	top: 23px;
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal-contact-us-close:hover,
+.modal-map-close:hover,
+.modal-contact-us-close:focus,
+.modal-map-close:focus {
 	opacity: 1;
 }
 
-.modal-close:active {
+.modal-contact-us-close:active,
+.modal-map-close:active {
 	opacity: 0.3;
 }
 
