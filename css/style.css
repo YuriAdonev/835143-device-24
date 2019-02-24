@@ -1143,6 +1143,7 @@ h3 {
 	font-size: 14px;
 	resize: none;
 	box-sizing: border-box;
+	outline: none;
 }
 
 .contact-us-btn {
