@@ -251,7 +251,7 @@ h3 {
 .log-out {
 	margin-left: 20px;
 	opacity: 0.3;
-	transition: opacity 0.2s linear;
+	transition: all 0.2s linear;
 }
 
 .log-out:hover,
@@ -813,6 +813,7 @@ h3 {
 
 .footer-logo {
 	display: block;
+	transition: opacity 0.2s linear;
 }
 
 .footer-logo:hover,
@@ -839,6 +840,7 @@ h3 {
 .footer-phone a {
 	color: #fff;
 	text-decoration: none;
+	transition: color 0.2s linear;
 }
 
 .footer-phone a:hover,
@@ -860,6 +862,7 @@ h3 {
 .footer-user-nav a {
 	color: rgba(255, 255, 255, 0.7);
 	text-decoration: none;
+	transition: color 0.2s linear;
 }
 
 .footer-user-nav .log-out::before {
@@ -889,6 +892,7 @@ h3 {
 	display: inline-block;
 	width: 13px;
 	height: 13px;
+	transition: opacity 0.2s linear;
 }
 
 .footer-user-nav .login::before {
@@ -934,6 +938,7 @@ h3 {
 	color: #ffffff;
 	text-decoration: none;
 	text-transform: uppercase;
+	transition: color 0.2s linear;
 }
 
 .footer-nav a:hover,
@@ -963,6 +968,7 @@ h3 {
 	font-size: 0;
 	line-height: 0;
 	opacity: 0.3;
+	transition: opacity 0.2s linear;
 }
 
 .social a:hover,
@@ -988,6 +994,7 @@ h3 {
 
 .copyright {
 	margin-left: 53px;
+	transition: opacity 0.2s linear;
 }
 
 .copyright img {
@@ -1016,28 +1023,35 @@ h3 {
 }
 
 .contact-us {
-	padding: 90px 100px;
+	padding: 95px 100px;
 	box-sizing: border-box;
+}
+
+.contact-us p {
+	margin: 0;
 }
 
 .contact-us label {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 800;
+	letter-spacing: 0.4px;
 }
 
 .inputs-row {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 30px;
 }
 
 .inputs-row input {
 	display: block;
 	width: 360px;
-	padding: 10px 20px;
+	padding: 10px 18px;
 	box-sizing: border-box;
 	font-family: "OpenSans", Arial, sans-serif;
 	font-size: 14px;
+	line-height: 24px;
 }
 
 .modal input,
@@ -1072,7 +1086,8 @@ h3 {
 .contact-us textarea {
 	width: 100%;
 	height: 156px;
-	padding: 10px 20px;
+	padding: 12px 18px;
+	margin-bottom: 30px;
 	font-family: "OpenSans", Arial, sans-serif;
 	font-size: 14px;
 	resize: none;
@@ -1092,7 +1107,7 @@ h3 {
 	width: 55px;
 	height: 55px;
 	position: absolute;
-	top: 22px;
+	top: 30px;
 	right: 22px;
 	font-size: 0;
 	background: url(../img/modal-close.svg) no-repeat;
@@ -1101,6 +1116,10 @@ h3 {
 	outline: none;
 	opacity: 0.5;
 	transition: opacity 0.2s linear;
+}
+
+.modal-map .modal-close {
+	top: 23px;
 }
 
 .modal-close:hover,
