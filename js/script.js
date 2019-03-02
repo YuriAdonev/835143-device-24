@@ -14,8 +14,8 @@ var isStorageSupport = true;
 var storage = "";
 
 try {
-  storageName = localStorage.getItem("userName");
-  storageEmail = localStorage.getItem("email");
+  var storageName = localStorage.getItem("userName");
+  var storageEmail = localStorage.getItem("email");
 } catch (err) {
   isStorageSupport = false;
 }
