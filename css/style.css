@@ -1485,6 +1485,7 @@ body {
 
 .modal-map-wrap iframe {
   display: block;
+  border: none;
 }
 
 .modal-contact-us-close,
